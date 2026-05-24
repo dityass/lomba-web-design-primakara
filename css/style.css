@@ -12,8 +12,9 @@
 
 :root {
     --primary-color: #059669;
-    --secondary-color: #091413;
-
+    --black-color: #0F1A14;
+    --white-color: #F0FDF4;
+    --paragraph-color: #6B7280;
 }
 
 .animate-slide-down {
@@ -23,8 +24,10 @@
     left: 1rem;
     right: 1rem;
 
-    background-color: white;
+    background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 1.5rem;
 }
 

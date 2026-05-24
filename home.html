@@ -18,7 +18,7 @@
             </div>
             <div class="gap-10 hidden md:flex items-center font-medium text-slate-600">
 
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 text-black">
                     <a href="home.html" class="hover:text-(--primary-color)">Home</a>
 
                     <div class="relative group">
@@ -41,8 +41,8 @@
                     </div>
                 </div>
 
-                <div class="flex items-center gap-2">
-                    <a href="about.html" class="hover:text-(--primary-color)">About</a>
+                <div class="flex items-center gap-2 text-black">
+                    <a href="about.html" class=" hover:text-(--primary-color)">About</a>
                     <div class="relative group">
                         <span class="group-hover:rotate-180 transition-transform duration-300 block cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
@@ -62,7 +62,7 @@
                     </div>
                 </div>
 
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 text-black">
                     <a href="program.html" class="hover:text-(--primary-color)">Program</a>
                     <div class="relative group">
                         <span class="group-hover:rotate-180 transition-transform duration-300 block cursor-pointer">
@@ -99,13 +99,14 @@
             </div>
         </div>
     </nav>
+
     <!-- mobile navbar menu -->
     <nav id="nav-mobile"
         class="translate-x-[110%] fixed top-4 right-4 w-[70%] h-[90%] z-50 bg-[#D6D6D6] text-slate-900 rounded-2xl flex flex-col justify-between shadow-2xl transition-all duration-500 ease-in-out">
 
-        <div class=" rounded-t-2xl text-white px-6 py-4 flex items-center justify-end">
+        <div class="bg-(--primary-color)/40 rounded-t-2xl text-white px-6 py-4 flex items-center justify-end">
             <div
-                class="-z-10 bg-(--primary-color) rounded-full blur-lg opacity-60 w-full h-[10%] absolute top-0 right-0">
+                class="-z-10 rounded-2xl bg-linear-to-b from-emerald-600 via-emerald-300 to-white blur-lg backdrop-filter backdrop-blur-lg opacity-40 w-full h-full absolute top-0 right-0">
             </div>
             <div id="nav-close"
                 class=" flex items-center gap-2 cursor-pointer opacity-80 hover:opacity-100 transition-opacity">
@@ -122,8 +123,8 @@
         <div class="flex px-8 py-8 flex-col gap-8">
 
             <div>
-                <span class="text-xs font-medium text-slate-500 block mb-2 tracking-wide">Menu</span>
-                <div class="flex flex-col gap-3 alignment-left">
+                <span class="text-xs font-medium text-slate-700 block mb-2 tracking-wide">Menu</span>
+                <div class="flex flex-col gap-3 alignment-left text-black">
                     <a href="home.html"
                         class="text-2xl font-semibold tracking-tight text-slate-900 hover:opacity-70 transition-opacity">Home</a>
                     <a href="about.html"
@@ -136,8 +137,8 @@
             <hr class="border-slate-400/50 my-2" />
 
             <div>
-                <span class="text-xs font-medium text-slate-500 block mb-3 tracking-wide">Other</span>
-                <div class="flex flex-col gap-2">
+                <span class="text-xs font-medium text-slate-600 block mb-3 tracking-wide">Other</span>
+                <div class="flex flex-col gap-2 text-black">
                     <a href="#" class="text-base font-medium text-slate-800 hover:underline">FAQ</a>
                     <a href="#" class="text-base font-medium text-slate-800 hover:underline">Our Team</a>
                     <a href="#" class="text-base font-medium text-slate-800 hover:underline">Prices</a>
@@ -154,10 +155,10 @@
     </nav>
 
     <!-- content -->
-    <main class="min-h-screen w-full px-6 md:px-20 mx-auto flex items-center py-20 mt-20">
+    <main class="box-border min-h-screen w-full px-6 md:px-20 mx-auto flex flex-col items-center py-20">
 
         <!-- hero section -->
-        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center w-full">
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16 lg:gap-20 items-center w-full">
             <div class="flex flex-col space-y-4 md:space-y-6 items-start justify-center">
                 <span
                     class="text-(--primary-color) font-semibold tracking-wider uppercase text-sm bg-emerald-100/60 px-4 py-1.5 rounded-full">
@@ -169,18 +170,18 @@
                         our
                         planet</span>
                 </h1>
-                <p class="text-base md:text-lg text-slate-600 leading-relaxed">
+                <p class="text-base md:text-lg text-(--paragraph-color) leading-relaxed">
                     Turn your daily trash into a valuable resource. By sorting your household plastic, paper, and metal
                     waste today, you can deposit them into our waste bank to earn rewards or cash. Join our growing
                     community now and start making a measurable impact
                 </p>
                 <div class="flex flex-wrap gap-4 pt-2 w-full sm:w-auto">
                     <button
-                        class="capitalize w-full sm:w-auto bg-(--primary-color) text-white font-medium py-3.5 px-8 rounded-xl hover:bg-emerald-700 shadow-lg shadow-(--primary-color)/20 hover:shadow-xl transition-all transform hover:-translate-y-0.5">
+                        class="capitalize w-full sm:w-auto bg-(--primary-color) text-(--white-color) font-medium py-3.5 px-8 rounded-xl hover:bg-emerald-700 shadow-lg shadow-(--primary-color)/20 hover:shadow-xl transition-all transform hover:-translate-y-0.5">
                         join us
                     </button>
                     <button
-                        class="capitalize w-full sm:w-auto bg-white text-slate-700 font-medium py-3.5 px-8 rounded-xl border border-slate-200 hover:bg-slate-50 hover:text-(--primary-color) transition-all">
+                        class="capitalize w-full sm:w-auto bg-(--white-color) text-(--black-color) font-medium py-3.5 px-8 rounded-xl border border-slate-200 hover:bg-slate-50 hover:text-(--primary-color) transition-all">
                         learn more
                     </button>
                 </div>
@@ -191,25 +192,162 @@
                 <div class="absolute -bottom-10 -right-6 w-44 h-44 bg-slate-300 rounded-full blur-3xl opacity-30 -z-10">
                 </div>
                 <div
-                    class="w-full h-full rounded-3xl overflow-hidden shadow-2xl shadow-slate-900/10 border-4 border-white">
-                    <img src="img/heroo-img.jpg" alt="Hero Image"
+                    class="w-full h-full rounded-3xl overflow-hidden shadow-2xl shadow-slate-900/10 border-4 border-(--white-color)">
+                    <img src="img/hero-img.jpg" alt="Hero Image"
                         class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
                 </div>
                 <div
-                    class="absolute -bottom-6 left-6 md:-left-8 flex items-center gap-4 p-4 bg-white/90 backdrop-blur-md shadow-xl rounded-2xl border border-slate-100">
+                    class="absolute -bottom-6 left-6 md:-left-8 flex items-center gap-4 p-4 bg-(--white-color)/95 backdrop-blur-md shadow-xl rounded-2xl border border-slate-100">
                     <div
                         class="rounded-xl bg-(--primary-color) text-white flex flex-col items-center justify-center p-3 font-bold">
                         <span class="text-xl leading-none">4.8</span>
                     </div>
                     <div>
                         <h3 class="capitalize font-bold text-slate-800 text-sm md:text-base">community rating</h3>
-                        <p class="text-xs md:text-sm text-slate-500 font-medium">12.000+ active members</p>
+                        <p class="text-xs text-(--paragraph-color)">Based on 1,200+ reviews</p>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- about section  -->
+        <section class="mt-24 w-full h-full">
+            <div
+                class="grid grid-cols-1 items-center px-6 md:px-20 py-20 bg-(--black-color) lg:gap-20 lg:grid-cols-12 gap-12 -mx-6 md:-mx-20">
+                <div
+                    class="-rotate-3 lg:col-span-5 w-full h-[200px] md:h-[270px] lg:h-[600px] overflow-hidden rounded-3xl shadow-2xl shadow-slate-900/10 border-4 border-(--white-color)">
+                    <img class=" w-full h-full object-cover rounded-3xl hover:scale-105 transition-transform duration-700"
+                        src="img/about-img.avif" alt="">
+                </div>
+                <div class="w-full lg:col-span-7 flex flex-col">
+                    <span
+                        class="text-xs font-bold tracking-widest text-(--primary-color) border px-3 py-1 w-fit rounded-full  uppercase mb-3 block">
+                        About Our Platform
+                    </span>
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-(--white-color) mb-6">
+                        What is Re-Earth?
+                    </h1>
+                    <p class="mb-6 text-base lg:text-lg text-(--paragraph-color) leading-relaxed">
+                        Re-Earth is a waste bank platform that empowers individuals and communities to take action
+                        against plastic pollution. By providing an easy-to-use system for sorting and depositing
+                        household waste, Re-Earth encourages sustainable habits and rewards users for their efforts. Our
+                        mission is to
+                        create a cleaner and greener environment by transforming daily waste into valuable resources,
+                        fostering a sense of community, and increasing environmental responsibility.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                        <div
+                            class="group/card flex flex-col justify-between p-6 bg-white/2 border border-white/10 rounded-2xl shadow-xl hover:border-(--primary-color)/50 transition-all duration-300">
+                            <div>
+                                <p class="capitalize text-sm font-medium text-slate-400 tracking-wide mb-1">
+                                    Established Since</p>
+                                <h4
+                                    class="text-4xl font-extrabold text-(--white-color) group-hover/card:text-(--primary-color) transition-colors duration-300">
+                                    2015</h4>
+                            </div>
+                            <div
+                                class="w-8 h-1 bg-(--primary-color)/30 group-hover/card:w-full transition-all duration-500 rounded-full mt-4">
+                            </div>
+                        </div>
+                        <div
+                            class="group/card flex flex-col justify-between p-6 bg-white/2 border border-white/10 rounded-2xl shadow-xl hover:border-(--primary-color)/50 transition-all duration-300">
+                            <div>
+                                <p class="capitalize text-sm font-medium text-slate-400 tracking-wide mb-1">Active
+                                    Members</p>
+                                <h4
+                                    class="text-4xl font-extrabold text-(--white-color) group-hover/card:text-(--primary-color) transition-colors duration-300">
+                                    12,000+</h4>
+                            </div>
+                            <div
+                                class="w-8 h-1 bg-(--primary-color)/30 group-hover/card:w-full transition-all duration-500 rounded-full mt-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </section>
+
+        <!-- testimonials -->
+        <section class="mt-36 w-full h-full">
+            <div class="flex flex-col items-center gap-6">
+                <span
+                    class="text-(--primary-color) font-semibold tracking-wider uppercase text-sm bg-emerald-100/60 px-4 py-1.5 rounded-full">
+                    Testimonials
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800">What People Say about Us</h2>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="space-y-4 flex flex-col justify-between p-6 bg-white border border-slate-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center gap-4">
+                        <div class="p-5 w-fit bg-(--primary-color) rounded-full"></div>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-800">Jane Doe</h3>
+                            <p class="text-sm text-slate-500">Eco-conscious Citizen</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-4">"Re-Earth has completely changed the way I think about waste. It's so
+                        rewarding to see my efforts
+                        make a real difference in the environment."
+                    </p>
+                </div>
+
+                <div
+                    class="space-y-4 flex flex-col justify-between p-6 bg-white border border-slate-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center gap-4">
+                        <div class="p-5 w-fit bg-(--primary-color) rounded-full"></div>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-800">Jane Doe</h3>
+                            <p class="text-sm text-slate-500">Eco-conscious Citizen</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-4">"Re-Earth has completely changed the way I think about waste. It's so
+                        rewarding to see my efforts
+                        make a real difference in the environment."
+                    </p>
+                </div>
+
+                <div
+                    class="space-y-4 flex flex-col justify-between p-6 bg-white border border-slate-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center gap-4">
+                        <div class="p-5 w-fit bg-(--primary-color) rounded-full"></div>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-800">Jane Doe</h3>
+                            <p class="text-sm text-slate-500">Eco-conscious Citizen</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-4">"Re-Earth has completely changed the way I think about waste. It's so
+                        rewarding to see my efforts
+                        make a real difference in the environment."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
     </main>
+    <!-- footer -->
+    <footer class="mt-36 w-full h-full bg-(--black-color) py-20 px-6 md:px-20">
+        <div class="flex flex-col items-center gap-6">
+            <span
+                class="text-(--primary-color) font-semibold tracking-wider uppercase text-sm bg-emerald-100/60 px-4 py-1.5 rounded-full">
+                Join the Movement
+            </span>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Ready to Make a Difference?</h2>
+            <p class="text-base md:text-lg text-slate-600 leading-relaxed text-center max-w-xl">
+                Sign up today and start turning your waste into a valuable resource. Together, we can create a
+                cleaner, greener future for our planet.
+            </p>
+            <button
+                class="capitalize bg-(--primary-color) text-white font-medium py-3.5 px-8 rounded-xl hover:bg-emerald-700 shadow-lg shadow-(--primary-color)/20 hover:shadow-xl transition-all transform hover:-translate-y-0.5">
+                join us
+            </button>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 

@@ -22,7 +22,7 @@ navClose.addEventListener('click', () => {
 
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 120) {
+    if (window.scrollY > 150) {
         navChild.classList.add('animate-slide-down');
     } else if (window.scrollY == 0) {
         navChild.classList.remove('animate-slide-down');
