@@ -1,39 +1,18 @@
 @import 'tailwindcss';
 
-@keyframes slide-down {
-    from {
-        transform: translateY(-100%);
-    }
-
-    to {
-        transform: translateY(0);
-    }
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-:root {
-    --primary-color: #059669;
-    --black-color: #0F1A14;
-    --white-color: #F0FDF4;
-    --paragraph-color: #6B7280;
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
 }
 
-.animate-slide-down {
-    animation: slide-down 0.6s forwards;
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    right: 1rem;
-
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 1.5rem;
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
 }
 
-@media (min-width: 768px) {
-    .animate-slide-down {
-        left: 2.5rem;
-        right: 2.5rem;
-    }
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
 }
